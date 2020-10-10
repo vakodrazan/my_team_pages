@@ -1,0 +1,24 @@
+{
+  "name": "my_team_pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass scss -o webroot/css",
+    "scss:watch": "npm run scss && node-sass scss -w -o webroot/css",
+    "start": "npm run scss:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vakodrazan/my_team_pages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vakodrazan/my_team_pages/issues"
+  },
+  "homepage": "https://github.com/vakodrazan/my_team_pages#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
