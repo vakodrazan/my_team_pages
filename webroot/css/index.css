@@ -29,4 +29,8 @@
   src: local("PT Serif Bold"), local("PT-Serif-Bold"), url("../fonts/ptserif-700.woff2") format(woff2), url("../fonts/ptserif-700.woff") format(woff); }
 
 body {
-  font-family: "Poppins", Arial, Helvetica, sans-serif; }
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 18px; }
+
+img {
+  max-width: 100%; }
