@@ -1,0 +1,11 @@
+.masthead__heading {
+    --font_size: 18px;
+    font-size: var(--font_size);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.masthead__description {
+    --font_size: 14px;
+    font-size: var(--font_size);
+}
