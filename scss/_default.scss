@@ -1,6 +1,12 @@
+:root {
+    --font_size: 18px;
+}
+
 body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: var(--font_size);
+    margin: 0;
+    background-color: #FAFAFA;
 }
 
 
