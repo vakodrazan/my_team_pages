@@ -72,3 +72,13 @@ p {
   --font_size: 14px;
   font-size: var(--font_size);
   padding-bottom: 38px; }
+
+.container {
+  padding-right: 18px;
+  padding-left: 12px; }
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0; } }
