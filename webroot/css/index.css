@@ -35,7 +35,8 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: var(--font_size);
   margin: 0;
-  background-color: #FAFAFA; }
+  background-color: #FAFAFA;
+  line-height: 1.5; }
 
 h1,
 h2,
@@ -52,7 +53,9 @@ p {
   margin: 0; }
 
 .header {
-  font-family: "PT Serif", Arial, Helvetica, sans-serif; }
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
+  padding-top: 17px;
+  padding-bottom: 38px; }
   .header > h1 {
     --font_size: 36px;
     font-weight: 700;
@@ -62,8 +65,10 @@ p {
   --font_size: 18px;
   font-size: var(--font_size);
   text-transform: uppercase;
-  font-weight: 600; }
+  font-weight: 600;
+  padding-bottom: 10px; }
 
 .masthead__description {
   --font_size: 14px;
-  font-size: var(--font_size); }
+  font-size: var(--font_size);
+  padding-bottom: 38px; }
