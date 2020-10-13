@@ -82,3 +82,18 @@ p {
       margin-left: auto;
       margin-right: auto;
       padding: 0; } }
+
+.article__section__link {
+  position: relative;
+  color: #000; }
+  .article__section__link > p {
+    font-family: "PT Serif", Arial, Helvetica, sans-serif;
+    transform: rotate(90deg);
+    position: absolute;
+    font-size: 10px;
+    top: 8.5%;
+    left: 45%;
+    margin-left: 50%;
+    text-transform: uppercase;
+    width: 122px;
+    height: 10px; }
