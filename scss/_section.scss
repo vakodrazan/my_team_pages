@@ -1,17 +1,71 @@
 .article__section__link {
     position: relative;
     color: #000;
-    
+
+    > h3 {
+        columns: 3;
+    }
+
+    > picture {
+        columns: 1;
+
+        > img {
+            width: 177px;
+        }
+    }
+
     > p {
         font-family: "PT Serif", Arial, Helvetica, sans-serif;
         transform: rotate(90deg);
         position: absolute;
         font-size: 10px;
-        top: 8.5%;
-        left: 45%;
-        margin-left: 50%;
+        top: 0;
+        left: 73%;
         text-transform: uppercase;
         width: 122px;
         height: 10px;
     }
+
 }
+
+.article {
+    > .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.article__section {
+    width: 100px;
+}
+
+.article__section:nth-child(odd) {
+    
+}
+
+.article__section:nth-child(even) {
+    padding-top: 54px;
+    padding-right: 1rem;
+}
+
+.article__section--bill-mahoney {
+    flex-basis: 40%;
+}
+.article__section--saba-cabrera {
+    flex-basis: 40%;
+}
+.article__section--shae-le {
+    flex-basis: 40%;
+}
+.article__section--skylah-lu {
+    flex-basis: 40%;
+}
+.article__section--griff-richards {
+    flex-basis: 40%;
+}
+.article__section--stan-john {
+    flex-basis: 40%;
+}
+
