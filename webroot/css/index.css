@@ -92,6 +92,9 @@ p {
     columns: 1; }
     .article__section__link > picture > img {
       width: 177px; }
+      @media (min-width: 650px) {
+        .article__section__link > picture > img {
+          width: auto; } }
   .article__section__link > p {
     font-family: "PT Serif", Arial, Helvetica, sans-serif;
     transform: rotate(90deg);
@@ -118,18 +121,36 @@ p {
 
 .article__section--bill-mahoney {
   flex-basis: 40%; }
+  @media (min-width: 650px) {
+    .article__section--bill-mahoney {
+      flex-basis: 30%; } }
 
 .article__section--saba-cabrera {
   flex-basis: 40%; }
+  @media (min-width: 650px) {
+    .article__section--saba-cabrera {
+      flex-basis: 30%; } }
 
 .article__section--shae-le {
   flex-basis: 40%; }
+  @media (min-width: 650px) {
+    .article__section--shae-le {
+      flex-basis: 30%; } }
 
 .article__section--skylah-lu {
   flex-basis: 40%; }
+  @media (min-width: 650px) {
+    .article__section--skylah-lu {
+      flex-basis: 30%; } }
 
 .article__section--griff-richards {
   flex-basis: 40%; }
+  @media (min-width: 650px) {
+    .article__section--griff-richards {
+      flex-basis: 30%; } }
 
 .article__section--stan-john {
   flex-basis: 40%; }
+  @media (min-width: 650px) {
+    .article__section--stan-john {
+      flex-basis: 30%; } }

@@ -1,3 +1,5 @@
+@import "variables";
+
 .article__section__link {
     position: relative;
     color: #000;
@@ -11,6 +13,12 @@
 
         > img {
             width: 177px;
+
+
+            @media (min-width: $tablet-breakpoint) {
+                width: auto;
+
+            }
         }
     }
 
@@ -34,6 +42,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+
+
     }
 }
 
@@ -52,20 +62,44 @@
 
 .article__section--bill-mahoney {
     flex-basis: 40%;
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-basis: 30%;
+    }
 }
 .article__section--saba-cabrera {
     flex-basis: 40%;
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-basis: 30%;
+    }
 }
 .article__section--shae-le {
     flex-basis: 40%;
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-basis: 30%;
+    }
 }
 .article__section--skylah-lu {
     flex-basis: 40%;
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-basis: 30%;
+    }
 }
 .article__section--griff-richards {
     flex-basis: 40%;
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-basis: 30%;
+    }
 }
 .article__section--stan-john {
     flex-basis: 40%;
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-basis: 30%;
+    }
 }
 
