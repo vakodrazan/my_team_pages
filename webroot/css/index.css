@@ -156,3 +156,21 @@ a:hover {
 @media (min-width: 650px) {
   .article__section:nth-child(3n - 1) {
     padding-top: 54px; } }
+
+.footer {
+  --padding_top: 56px;
+  --padding_bottom: 27px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: var(--padding_top);
+  padding-bottom: var(--padding_bottom); }
+  .footer > small {
+    --font_size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--font_size);
+    color: #A9A9A9; }
+  @media (min-width: 650px) {
+    .footer {
+      --padding_top: 77px;
+      --padding_bottom: 30px; } }
