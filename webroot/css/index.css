@@ -117,7 +117,12 @@ a:hover {
   display: flex;
   flex-direction: column-reverse; }
   .article__section__link > h3 {
-    font-size: 14px; }
+    --font-size: 14px;
+    font-size: var(--font-size);
+    font-weight: 600; }
+    @media (min-width: 650px) {
+      .article__section__link > h3 {
+        --font-size: 18px; } }
   .article__section__link > p {
     writing-mode: vertical-rl;
     font-family: "PT Serif", Arial, Helvetica, sans-serif;
