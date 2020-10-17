@@ -52,6 +52,9 @@ img {
 p {
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 .header {
   font-family: "PT Serif", Arial, Helvetica, sans-serif;
   padding-top: 17px;
@@ -76,11 +79,6 @@ p {
 .container {
   padding-right: 18px;
   padding-left: 12px; }
-  @media (min-width: 650px) {
-    .container {
-      max-width: 650px;
-      margin-left: auto;
-      margin-right: auto; } }
   @media (min-width: 1440px) {
     .container {
       max-width: 1440px;
@@ -95,31 +93,14 @@ p {
   flex-direction: column-reverse; }
   .article__section__link > h3 {
     font-size: 14px; }
-  .article__section__link > picture > img {
-    width: 177px;
-    height: auto; }
-    @media (min-width: 650px) {
-      .article__section__link > picture > img {
-        width: auto; } }
   .article__section__link > p {
+    writing-mode: vertical-rl;
     font-family: "PT Serif", Arial, Helvetica, sans-serif;
-    transform: rotate(90deg);
-    position: absolute;
-    font-size: 10px;
-    top: 16%;
-    left: 70%;
-    margin: auto;
+    font-size: 12px;
     text-transform: uppercase;
-    width: 122px;
-    height: 10px; }
-    @media (min-width: 650px) {
-      .article__section__link > p {
-        top: 18%;
-        left: 76%; } }
-    @media (min-width: 1440px) {
-      .article__section__link > p {
-        top: 8%;
-        left: 86%; } }
+    position: absolute;
+    top: 0;
+    left: 100%; }
 
 .article > .container {
   display: flex;
@@ -128,12 +109,11 @@ p {
   justify-content: space-between; }
 
 .article__section {
-  width: 130px;
-  padding-bottom: 2rem; }
-
-@media (min-width: 650px) {
-  .article__section:not(:nth-child(3n - 2)) {
-    padding-left: 20px; } }
+  padding-bottom: 2rem;
+  flex-basis: 44%; }
+  @media (min-width: 650px) {
+    .article__section {
+      flex-basis: 30%; } }
 
 .article__section:nth-child(even) {
   padding-top: 54px;
@@ -146,39 +126,3 @@ p {
 @media (min-width: 650px) {
   .article__section:nth-child(3n - 1) {
     padding-top: 54px; } }
-
-.article__section--bill-mahoney {
-  flex-basis: 40%; }
-  @media (min-width: 650px) {
-    .article__section--bill-mahoney {
-      flex-basis: 30%; } }
-
-.article__section--saba-cabrera {
-  flex-basis: 40%; }
-  @media (min-width: 650px) {
-    .article__section--saba-cabrera {
-      flex-basis: 30%; } }
-
-.article__section--shae-le {
-  flex-basis: 40%; }
-  @media (min-width: 650px) {
-    .article__section--shae-le {
-      flex-basis: 30%; } }
-
-.article__section--skylah-lu {
-  flex-basis: 40%; }
-  @media (min-width: 650px) {
-    .article__section--skylah-lu {
-      flex-basis: 30%; } }
-
-.article__section--griff-richards {
-  flex-basis: 40%; }
-  @media (min-width: 650px) {
-    .article__section--griff-richards {
-      flex-basis: 30%; } }
-
-.article__section--stan-john {
-  flex-basis: 40%; }
-  @media (min-width: 650px) {
-    .article__section--stan-john {
-      flex-basis: 30%; } }

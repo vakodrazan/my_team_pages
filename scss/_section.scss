@@ -10,39 +10,15 @@
         font-size: 14px;
     }
 
-    > picture {
-
-        > img {
-            width: 177px;
-            height: auto;
-
-
-            @media (min-width: $tablet-breakpoint) {
-                width: auto;
-            }
-        }
-    }
-
     > p {
+        // Use this property to rotate the element
+        writing-mode: vertical-rl;
         font-family: "PT Serif", Arial, Helvetica, sans-serif;
-        transform: rotate(90deg);
-        position: absolute;
-        font-size: 10px;
-        top: 16%;
-        left: 70%;
-        margin: auto;
+        font-size: 12px;
         text-transform: uppercase;
-        width: 122px;
-        height: 10px;
-
-        @media (min-width: $tablet-breakpoint) {
-            top: 18%;
-            left: 76%;
-        }
-        @media (min-width: $breakpoint-desktop) {
-            top: 8%;
-            left: 86%;
-        }
+        position: absolute;
+        top: 0;
+        left: 100%;
     }
 
 }
@@ -53,21 +29,20 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-
-
     }
 }
 
 .article__section {
-    width: 130px;
     padding-bottom: 2rem;
+    // Each section should only take this space 45% when it is two rows 
+    // but 30% when it is three rows
+    flex-basis: 44%;
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-basis: 30%;
+    }
 }
 
-@media (min-width: $tablet-breakpoint) {
-    .article__section:not(:nth-child(3n - 2)) {
-        padding-left: 20px;
-    } 
-}
 
 .article__section:nth-child(even) {
     padding-top: 54px;
@@ -84,50 +59,5 @@
 @media (min-width: $tablet-breakpoint) {
     .article__section:nth-child(3n - 1) {
         padding-top: 54px;
-    
     }
 }
-
-.article__section--bill-mahoney {
-    flex-basis: 40%;
-
-    @media (min-width: $tablet-breakpoint) {
-        flex-basis: 30%;
-    }
-}
-.article__section--saba-cabrera {
-    flex-basis: 40%;
-
-    @media (min-width: $tablet-breakpoint) {
-        flex-basis: 30%;
-    }
-}
-.article__section--shae-le {
-    flex-basis: 40%;
-
-    @media (min-width: $tablet-breakpoint) {
-        flex-basis: 30%;
-    }
-}
-.article__section--skylah-lu {
-    flex-basis: 40%;
-
-    @media (min-width: $tablet-breakpoint) {
-        flex-basis: 30%;
-    }
-}
-.article__section--griff-richards {
-    flex-basis: 40%;
-
-    @media (min-width: $tablet-breakpoint) {
-        flex-basis: 30%;
-    }
-}
-.article__section--stan-john {
-    flex-basis: 40%;
-
-    @media (min-width: $tablet-breakpoint) {
-        flex-basis: 30%;
-    }
-}
-
