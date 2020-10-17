@@ -1,3 +1,5 @@
+@import "variables";
+
 .header {
     font-family: "PT Serif", Arial, Helvetica, sans-serif;
     padding-top: 17px;
@@ -7,5 +9,9 @@
         --font_size: 36px;
         font-weight: 700;
         letter-spacing: -0.72px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        padding-bottom: 87px;
     }
 }
