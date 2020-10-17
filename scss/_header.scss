@@ -1,17 +1,56 @@
 @import "variables";
 
 .header {
-    font-family: "PT Serif", Arial, Helvetica, sans-serif;
-    padding-top: 17px;
-    padding-bottom: 38px;
 
-    > h1 {
-        --font_size: 36px;
-        font-weight: 700;
-        letter-spacing: -0.72px;
+    > .container {
+    
+        > h1 {
+            font-family: "PT Serif", Arial, Helvetica, sans-serif;
+            --font_size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.72px;
+            padding-top: 17px;
+            padding-bottom: 38px;
+
+            @media (min-width: $breakpoint-desktop) {
+                padding: 0;
+            }
+        }
+    
+        @media (min-width: $breakpoint-desktop) {
+            padding-top: 110px;
+            padding-bottom: 170px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
-    @media (min-width: $breakpoint-desktop) {
-        padding-bottom: 87px;
+}
+
+.header__info {
+    --max-width: 335px;
+    max-width: var(--max-width);
+
+    > h2 {
+        --font_size: 18px;
+        font-size: var(--font_size);
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    
+    > p {
+        --font_size: 14px;
+        font-size: var(--font_size);
+        padding-bottom: 38px;
+    
+        @media (min-width: $tablet-breakpoint) {
+            --font_size: 18px;
+        }
+    }
+    @media (min-width: $tablet-breakpoint) {
+        --max-width: 440px;
     }
 }
+
