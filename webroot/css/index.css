@@ -55,6 +55,10 @@ p {
 a {
   text-decoration: none; }
 
+a:hover {
+  text-decoration: underline #b288ff;
+  opacity: 0.8; }
+
 .header > .container > h1 {
   font-family: "PT Serif", Arial, Helvetica, sans-serif;
   --font_size: 36px;
