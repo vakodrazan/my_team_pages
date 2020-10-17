@@ -4,6 +4,12 @@
     padding-right: 18px;
     padding-left: 12px;
 
+    @media (min-width: $tablet-breakpoint) {
+        max-width: $tablet-breakpoint;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     @media (min-width: $breakpoint-desktop) {
         max-width: $breakpoint-desktop;
         margin-left: auto;
